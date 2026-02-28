@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gali Thanvika — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Glow orbs -->
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<!-- Nav -->
+<nav id="navbar">
+  <div class="nav-logo">G<span>.</span>THANVIKA</div>
+  <div class="nav-links" id="navLinks">
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="toggle-wrap">
+    <span class="toggle-label" id="themeLabel">DARK</span>
+    <div class="theme-toggle" id="themeToggle" title="Toggle theme"></div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#hero" onclick="closeMobile()">Home</a>
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#skills" onclick="closeMobile()">Skills</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#experience" onclick="closeMobile()">Experience</a>
+  <a href="#education" onclick="closeMobile()">Education</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
+
+<main>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-tag reveal">Full Stack Developer & AI Enthusiast</div>
+      <h1 class="hero-name reveal">
+        GALI<br>
+        <span class="line2">THANVIKA</span>
+      </h1>
+      <p class="hero-desc reveal">
+        Building <strong>intelligent web solutions</strong> that blend clean architecture with meaningful user experiences. Specializing in Spring Boot, React, and AI-powered applications.
+      </p>
+      <div class="hero-btns reveal">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat-item">
+          <span class="stat-num">8.57</span>
+          <span class="stat-label">CGPA</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">2+</span>
+          <span class="stat-label">Internships</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Class X Score</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Terminal widget -->
+    <div class="hero-terminal reveal">
+      <div class="terminal-bar">
+        <div class="t-dot r"></div>
+        <div class="t-dot y"></div>
+        <div class="t-dot g"></div>
+        <span class="terminal-title">thanvika@portfolio ~ </span>
+      </div>
+      <div class="terminal-body">
+        <span class="t-line"><span class="t-prompt">$ </span><span class="t-cmd">cat profile.json</span></span>
+        <span class="t-line t-output">{</span>
+        <span class="t-line t-output">&nbsp;&nbsp;<span class="t-pink">"name"</span>: <span class="t-highlight">"Gali Thanvika"</span>,</span>
+        <span class="t-line t-output">&nbsp;&nbsp;<span class="t-pink">"role"</span>: <span class="t-highlight">"Full Stack Dev"</span>,</span>
+        <span class="t-line t-output">&nbsp;&nbsp;<span class="t-pink">"cgpa"</span>: <span class="t-highlight">8.57</span>,</span>
+        <span class="t-line t-output">&nbsp;&nbsp;<span class="t-pink">"location"</span>: <span class="t-highlight">"Nellore, AP"</span>,</span>
+        <span class="t-line t-output">&nbsp;&nbsp;<span class="t-pink">"stack"</span>: [</span>
+        <span class="t-line t-output">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-highlight">"SpringBoot"</span>, <span class="t-highlight">"React"</span>,</span>
+        <span class="t-line t-output">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-highlight">"MySQL"</span>, <span class="t-highlight">"Java"</span></span>
+        <span class="t-line t-output">&nbsp;&nbsp;],</span>
+        <span class="t-line t-output">&nbsp;&nbsp;<span class="t-pink">"open_to"</span>: <span class="t-highlight">"opportunities"</span></span>
+        <span class="t-line t-output">}</span>
+        <span class="t-line"><span class="t-prompt">$ </span><span class="t-cursor"></span></span>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">About Me</div>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a <strong>passionate technology enthusiast</strong> pursuing B.E. in Computer Science with Honours in AI at RMK College of Engineering and Technology. I thrive at the intersection of full-stack development and intelligent systems.</p>
+          <p>My journey includes hands-on experience building <strong>RESTful APIs with Spring Boot</strong>, crafting responsive UIs with React & Tailwind. I bring a blend of technical depth and creative problem-solving to every project.</p>
+        </div>
+        <div class="about-card reveal">
+          <div class="info-row">
+            <span class="info-icon">👤</span>
+            <div>
+              <div class="info-key">Full Name</div>
+              <div class="info-val">Gali Thanvika</div>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">📍</span>
+            <div>
+              <div class="info-key">Location</div>
+              <div class="info-val">Nellore, Andhra Pradesh</div>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">📧</span>
+            <div>
+              <div class="info-key">Email</div>
+              <div class="info-val">thanvikagali28@gmail.com</div>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">📱</span>
+            <div>
+              <div class="info-key">Phone</div>
+              <div class="info-val">+91-9346199390</div>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">🎓</span>
+            <div>
+              <div class="info-key">Degree</div>
+              <div class="info-val">B.E. CSE (Honours in AI) — 2023–2027</div>
+            </div>  .
+          </div>
+          <div class="info-row">
+            <span class="info-icon">🗣️</span>
+            <div>
+              <div class="info-key">Languages</div>
+              <div class="info-val">English, Telugu</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Technical Skills</div>
+        <h2 class="section-title">What I Work With</h2>
+      </div>
+
+      <!-- Proficiency bars -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-bottom:48px;">
+        <div class="reveal" id="barsLeft">
+          <div class="skill-bar-row">
+            <div class="skill-bar-top"><span>Java</span><span style="color:var(--accent)">92%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="92"></div></div>
+          </div>
+          <div class="skill-bar-row">
+            <div class="skill-bar-top"><span>Spring Boot</span><span style="color:var(--accent)">82%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="82"></div></div>
+          </div>
+          <div class="skill-bar-row">
+            <div class="skill-bar-top"><span>React</span><span style="color:var(--accent)">80%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div>
+          </div>
+        </div>
+        <div class="reveal" id="barsRight">
+          <div class="skill-bar-row">
+            <div class="skill-bar-top"><span>HTML / CSS</span><span style="color:var(--accent)">90%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-bar-row">
+            <div class="skill-bar-top"><span>MySQL</span><span style="color:var(--accent)">78%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="78"></div></div>
+          </div>
+          <div class="skill-bar-row">
+            <div class="skill-bar-top"><span>JavaScript</span><span style="color:var(--accent)">75%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <div class="skill-cat-title">💻 Languages</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C++</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-title">🌐 Web Technologies</div>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-title">⚙️ Backend & APIs</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">CRUD</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-title">🗄️ Databases</div>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-title">🛠️ Tools & Platforms</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Thunder Client</span>
+            <span class="skill-tag">Figma</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <div class="skill-cat-title">🤝 Soft Skills</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Team Collaboration</span>
+            <span class="skill-tag">Communication</span>
+            <span class="skill-tag">Presentations</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">My Work</div>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon">📚</div>
+          </div>
+          <div class="project-body">
+            <div class="project-name">Book Store Management System</div>
+            <p class="project-desc">A Spring Boot RESTful application with MySQL integration implementing secure CRUD operations and robust input validation for complete bookstore management.</p>
+            <div class="project-tech">
+              <span class="tech-badge">Spring Boot</span>
+              <span class="tech-badge green">REST APIs</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">Java</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon">⚡</div>
+          </div>
+          <div class="project-body">
+            <div class="project-name">Code Flow</div>
+            <p class="project-desc">A responsive React and Tailwind CSS web application with modern UI components, clean design patterns, and full cross-device compatibility.</p>
+            <div class="project-tech">
+              <span class="tech-badge green">React</span>
+              <span class="tech-badge">Tailwind CSS</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon">🌐</div>
+          </div>
+          <div class="project-body">
+            <div class="project-name">Github Profile Analyzer</div>
+            <p class="project-desc"> Application that fetches and displays GitHub user profile data with dynamic API integration and responsive UI. </p>
+            <div class="project-tech">
+              <span class="tech-badge green">JavaScript</span>
+              <span class="tech-badge">GitHub API</span>
+              <span class="tech-badge">Responsive UI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Experience</div>
+        <h2 class="section-title">Work History</h2>
+      </div>
+      <div class="exp-timeline">
+        <div class="exp-item reveal">
+          <div class="exp-dot">💼</div>
+          <div class="exp-content">
+            <div class="exp-title">Full Stack Developer Intern</div>
+            <div class="exp-org">StaxTech</div>
+            <div class="exp-date">JUN 2025 </div>
+            <p class="exp-desc">Built a responsive web application with 100% input validation accuracy using HTML, CSS, and JavaScript. Implemented arithmetic operations and comprehensive edge case handling.</p>
+          </div>
+        </div>
+        <div class="exp-item reveal">
+          <div class="exp-dot">⚙️</div>
+          <div class="exp-content">
+            <div class="exp-title">C++ Developer Intern</div>
+            <div class="exp-org">Codsoft</div>
+            <div class="exp-date">FEB 2024 – MAR 2024</div>
+            <p class="exp-desc">Developed 4+ console-based C++ applications implementing OOP concepts, arrays, strings, and file handling. Significantly improved problem-solving skills and logical accuracy.</p>
+          </div>
+        </div>
+        <div class="exp-item reveal">
+          <div class="exp-dot">🏛️</div>
+          <div class="exp-content">
+            <div class="exp-title">Executive Member</div>
+            <div class="exp-org">Computer Society of India (CSI)</div>
+            <div class="exp-date">ONGOING</div>
+            <p class="exp-desc">Actively involved in organizing technical events, workshops, and fostering a strong technical community within the college chapter.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Education</div>
+        <h2 class="section-title">Academic Background</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-icon">🎓</div>
+          <div>
+            <div class="edu-degree">B.E. Computer Science & Engineering (Honours in AI)</div>
+            <div class="edu-school">RMK College of Engineering and Technology</div>
+            <div class="edu-years">2023 – 2027</div>
+          </div>
+          <div>
+            <div class="edu-score">8.57</div>
+            <div class="edu-score-label">CGPA / 10</div>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon">📗</div>
+          <div>
+            <div class="edu-degree">Higher Secondary (Class XII)</div>
+            <div class="edu-school">Narayana Junior College</div>
+            <div class="edu-years">2021 – 2023</div>
+          </div>
+          <div>
+            <div class="edu-score">96.7%</div>
+            <div class="edu-score-label">Percentage</div>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-icon">📘</div>
+          <div>
+            <div class="edu-degree">Secondary Education (Class X)</div>
+            <div class="edu-school">Rathnam High School</div>
+            <div class="edu-years">2020 – 2021</div>
+          </div>
+          <div>
+            <div class="edu-score">100%</div>
+            <div class="edu-score-label">Percentage</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Credentials</div>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card reveal">
+          <div class="cert-icon">🏅</div>
+          <div>
+            <div class="cert-name">Microsoft Azure AI Fundamentals</div>
+            <div class="cert-org">MICROSOFT</div>
+            <div class="cert-year">2024</div>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">🔌</div>
+          <div>
+            <div class="cert-name">Introduction to Internet of Things</div>
+            <div class="cert-org">NPTEL</div>
+            <div class="cert-year">2025</div>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-icon">💻</div>
+          <div>
+            <div class="cert-name">Foundations of Web Development</div>
+            <div class="cert-org">UDEMY</div>
+            <div class="cert-year">2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Highlights</div>
+        <h2 class="section-title">Achievements</h2>
+      </div>
+      <div class="ach-list">
+        <div class="ach-item reveal">
+          <div class="ach-bullet">🏆</div>
+          <div class="ach-text"><strong>National Conference Presenter</strong> — Led a team at a National Conference on Recent Advancements in Computing Technologies, presenting a technical paper and showcasing innovative research.</div>
+        </div>
+        <div class="ach-item reveal">
+          <div class="ach-bullet">🔬</div>
+          <div class="ach-text"><strong>Research Paper — Gas Leakage Detector</strong> — Led a team in designing a functional prototype using Arduino, sensors, and a buzzer alert system, backed by a published research paper.</div>
+        </div>
+        <div class="ach-item reveal">
+          <div class="ach-bullet">🚀</div>
+          <div class="ach-text"><strong>Smart India Hackathon (SIH) 2025 Participant</strong> — Competed in one of India's largest hackathon events, demonstrating rapid problem-solving and innovation under pressure.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal" style="text-align:center;">
+        <div class="section-tag" style="justify-content:center;">Let's Connect</div>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <div class="contact-inner reveal">
+        <p>I'm currently open to internship opportunities, collaborative projects, and interesting conversations about tech. Feel free to reach out through any of the channels below!</p>
+        <div class="contact-links">
+          <a href="mailto:thanvikagali28@gmail.com" class="contact-link">
+            <span class="icon">✉️</span> Email Me
+          </a>
+          <a href="https://www.linkedin.com/in/gali-thanvika/" target="_blank" class="contact-link">
+            <span class="icon">🔗</span> LinkedIn
+          </a>
+          <a href="https://github.com/Thanvika-gali" target="_blank" class="contact-link">
+            <span class="icon">🐙</span> GitHub
+          </a>
+          <a href="tel:+919346199390" class="contact-link">
+            <span class="icon">📞</span> Call Me
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 <span class="footer-accent">Gali Thanvika</span>. Crafted with ☕ & passion.</p>
+  <p style="color:var(--accent2); font-size:0.65rem;">FULL STACK DEVELOPER · AI ENTHUSIAST</p>
+</footer>
+
+<a href="#hero" class="back-top" id="backTop">↑</a>
+
+<script src="script.js"></script>
+</body>
+</html>
