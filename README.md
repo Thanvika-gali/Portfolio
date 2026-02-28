@@ -6,7 +6,7 @@ A modern, responsive personal portfolio website built using **HTML, CSS, and Jav
 
 ## 🚀 Live Demo
 
-🔗 [View Portfolio](https://portfolio-py47nkv0a-thanvika-galis-projects.vercel.app/)
+🔗 [View Portfolio](portfolio-gold-six-24.vercel.app)
 
 
 ---
@@ -50,11 +50,6 @@ portfolio/
 * Designed with **clean UI/UX principles**
 * Built from scratch without frameworks
 * Focused on **performance and accessibility**
-* Showcases real-world projects including:
-
-  * Frontend applications
-  * API-based projects
-  * AI-based tools
 
 ---
 
@@ -62,15 +57,6 @@ portfolio/
 
 <img width="1877" height="849" alt="image" src="https://github.com/user-attachments/assets/1efdeaaa-2a75-4e2e-ad99-10cfa6ebca68" />
 
-
----
-
-## 📈 Future Improvements
-
-* Add React-based version
-* Blog section
-* Backend integration
-* Project filtering system
 
 ---
 
