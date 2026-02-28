@@ -6,7 +6,7 @@ A modern, responsive personal portfolio website built using **HTML, CSS, and Jav
 
 ## 🚀 Live Demo
 
-🔗 [View Portfolio](portfolio-gold-six-24.vercel.app)
+🔗 [View Portfolio](https://portfolio-gold-six-24.vercel.app/)
 
 
 ---
